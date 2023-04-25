@@ -15,8 +15,10 @@ object ProducerStart   {
       val payload = i.toString
       val message = new ProducerRecord[String, String]("profile_tx_out", key, payload)
       producer.send(message)
+      producer.flush()
 
     })
+    Thread.sleep(100000)
     producer.close()
   }
 
