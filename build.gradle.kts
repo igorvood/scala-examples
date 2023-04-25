@@ -8,7 +8,22 @@ repositories {
     mavenCentral()
 }
 
+val kafkaVersion = "3.4.0"
+val akkaVersion = "2.4.2"
+
+
 dependencies {
+    implementation("org.apache.kafka:kafka-clients:$kafkaVersion")
+    implementation("com.typesafe.akka:akka-slf4j:$akkaVersion")
+    implementation("ch.qos.logback:logback-classic:1.4.6")
+    implementation("com.typesafe.play:play-json:2.3.4")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.14.2")
+    implementation("com.fasterxml.jackson.module:jackson-module-scala:2.8.3")
+    implementation("org.apache.commons:commons-exec:1.3")
+    implementation("com.google.guava:guava:31.1-jre")
+    implementation("org.apache.avro:avro:1.11.0")
+    implementation("com.twitter:bijection-avro:0.9.2")
+
     implementation("org.scala-lang:scala-library:2.12.8")
 
     implementation("com.trueaccord.scalapb:scalapb-runtime-grpc_2.12:0.6.7")
