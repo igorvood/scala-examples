@@ -1,11 +1,9 @@
 package ru.vood.apps.kafka
 
 import org.apache.kafka.clients.producer.ProducerRecord
-import ru.vood.apps.EmptyApp.greeting
 import ru.vood.apps.kafka.config.SimpleProducer.producer
-import ru.vood.apps.kafka.config.SimpleProducerProps.producerProps
 
-object ProducerStart   {
+object ProducerStart {
 
 
   def main(args: Array[String]): Unit = {
